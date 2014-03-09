@@ -1,3 +1,15 @@
+bbcarchdev-sandbox (1.0-2) unstable; urgency=low
+
+  * Add kernel-package as a dependency to ensure modules can be built.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sun, 09 Mar 2014 15:40:04 +0000
+
+bbcarchdev-sandbox (1.0-1) unstable; urgency=low
+
+  * Update package dependencies; add generate-ssh-keys init script.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sun, 09 Mar 2014 14:55:25 +0000
+
 bbcarchdev-sandbox (1.0) unstable; urgency=low
 
   * Initial Release.
