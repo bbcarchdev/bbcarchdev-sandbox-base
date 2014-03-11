@@ -31,10 +31,12 @@ case "$1" in
 	missing=no
 	for t in $SSH_HOST_KEY_TYPES ; do
 		if ! test -f /etc/ssh/ssh_host_${t}_key ; then
+			log_action_msg "/etc/ssh/host_${t}_key is missing" || true
 			missing=yes
 			break
 		fi
 		if ! test -f /etc/ssh/ssh_host_${t}_key.pub ; then
+			log_action_msg "/etc/ssh/host_${t}_key.pub is missing" || true
 			missing=yes
 			break
 		fi
