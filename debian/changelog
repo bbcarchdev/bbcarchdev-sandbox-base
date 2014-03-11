@@ -1,3 +1,9 @@
+bbcarchdev-sandbox (1.0-3) unstable; urgency=low
+
+  * Add /etc/bbcarchdev-sandbox-version
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sun, 09 Mar 2014 18:35:29 +0000
+
 bbcarchdev-sandbox (1.0-2) unstable; urgency=low
 
   * Add kernel-package as a dependency to ensure modules can be built.
