@@ -1,3 +1,5 @@
 ../../regenerate-ssh-keys etc/init.d
 ../../bbcarchdev-sandbox-version etc
-
+../../reithproxies usr/bin
+../../socks_connect usr/sbin
+../../reithproxies.sh etc/profile.d

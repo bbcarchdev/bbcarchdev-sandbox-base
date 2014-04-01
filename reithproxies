@@ -1,0 +1,45 @@
+#! /bin/sh
+
+set -e
+
+### Enable or disable proxies for when using the sandbox on the Reith
+### (BBC corporate) network.
+###
+### This script does two things:
+###
+### 1. Write state to $HOME/.reithproxies, which is read by
+###    /etc/profile.d/reithproxies.sh
+###
+### 2. Update $HOME/.ssh/config, creating it if it does not already
+###    exist.
+###
+
+if [ x"$1" != x"on" ] && [ x"$1" != x"off" ]; then
+	echo "Usage: $0 on|off" >&2
+	exit 1
+fi
+
+echo "$1" > $HOME/.reithproxies
+
+ssh_proxycommand='ProxyCommand /usr/sbin/socks_connect %h %p'
+
+if ! [ -d $HOME/.ssh ] || ! [ -f $HOME/.ssh/config ] ; then
+	mkdir -p $HOME/.ssh
+	chmod 700 $HOME/.ssh
+	echo "ForwardAgent yes" > $HOME/.ssh/config
+	if [ "$1" = "on" ] ; then
+		echo "$ssh_proxycommand" >> $HOME/.ssh/config
+	else
+		echo "# $ssh_proxycommand" >> $HOME/.ssh/config
+	fi
+elif [ "$1" = "on" ] ; then
+	# Enable proxies
+	sed -i "s!^# $ssh_proxycommand\$!$ssh_proxycommand!g" $HOME/.ssh/config
+else
+	# Disable proxies
+	sed -i "s!^$ssh_proxycommand\$!# $ssh_proxycommand!g" $HOME/.ssh/config
+fi
+
+echo "Proxies have now been turned $1."
+echo "Log out and back in to ensure environment variables are correctly set."
+

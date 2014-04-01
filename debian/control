@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/bbcarchdev/deb-bbcarchdev-sandbox
 
 Package: bbcarchdev-sandbox-base
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, git-core, git-buildpackage, dh-make, pbuilder, pristine-tar, sudo, gnupg, build-essential, clang, automake, autoconf, libtool, kernel-package
+Depends: ${shlibs:Depends}, ${misc:Depends}, git-core, git-buildpackage, dh-make, pbuilder, pristine-tar, sudo, gnupg, build-essential, clang, automake, autoconf, libtool, kernel-package, netcat-openbsd
 Description: BBC Archive Development sandbox base configuration
  This package contains the base configuration for the BBC Archive Development
  sandbox.
