@@ -1,3 +1,9 @@
+bbcarchdev-sandbox (2.0) UNRELEASED; urgency=low
+
+  * Re-version as a native package.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Tue, 01 Apr 2014 16:44:11 +0100
+
 bbcarchdev-sandbox (1.0-4) unstable; urgency=low
 
   * Add pristine-tar to list of packages installed by default.
