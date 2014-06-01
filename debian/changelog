@@ -1,3 +1,10 @@
+bbcarchdev-sandbox (3.0) stable; urgency=low
+
+  * Remove /etc/init.d/regnerate-ssh-keys.
+  * Depend upon bbcarchdev-base instead.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sun, 01 Jun 2014 23:16:28 +0100
+
 bbcarchdev-sandbox (2.0) stable; urgency=low
 
   * Re-version as a native package.
