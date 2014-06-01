@@ -1,4 +1,4 @@
-bbcarchdev-sandbox (2.0) UNRELEASED; urgency=low
+bbcarchdev-sandbox (2.0) stable; urgency=low
 
   * Re-version as a native package.
   * Add /usr/bin/reithproxies and /usr/sbin/socks_connect.
