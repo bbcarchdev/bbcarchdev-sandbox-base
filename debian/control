@@ -1,12 +1,12 @@
-Source: bbcarchdev-sandbox
+Source: bbcarchdev-sandbox-base
 Section: unknown
 Priority: extra
 Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: https://confluence.dev.bbc.co.uk/display/ADOPS/Sandbox
-Vcs-Git: git://github.com/bbcarchdev/deb-bbcarchdev-sandbox.git
-Vcs-Browser: https://github.com/bbcarchdev/deb-bbcarchdev-sandbox
+Vcs-Git: git://github.com/bbcarchdev/bbcarchdev-sandbox-base.git
+Vcs-Browser: https://github.com/bbcarchdev/bbcarchdev-sandbox-base
 
 Package: bbcarchdev-sandbox-base
 Architecture: any
@@ -14,4 +14,3 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, bbcarchdev-base, git-core, git-buil
 Description: BBC Archive Development sandbox base configuration
  This package contains the base configuration for the BBC Archive Development
  sandbox.
-
