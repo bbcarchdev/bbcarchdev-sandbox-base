@@ -3,6 +3,9 @@
 %:
 	dh $@ 
 
+override_dh_auto_build:
+	test -r .release && cp .release bbcarchdev-sandbox-version
+
 override_dh_install:
 	test -d debian/tmp || mkdir debian/tmp
 	dh_install
