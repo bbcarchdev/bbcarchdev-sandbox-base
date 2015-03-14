@@ -1,0 +1,4 @@
+## Uncomment the below to enable bbcarchdev packages from the staging
+## environment.
+
+# deb [arch=amd64] http://apt.bbcarchdev.net/ wheezy stage live

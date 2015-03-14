@@ -1,0 +1,4 @@
+Explanation: zone: bbcarchdev-wheezy
+Package: *
+Pin: release o=bbcarchdev
+Pin-Priority: 995

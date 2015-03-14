@@ -1,3 +1,10 @@
+../../bbcarchdev-wheezy-dev.list etc/apt/sources.list.d
+../../bbcarchdev-wheezy-stage.list etc/apt/sources.list.d
+../../bbcarchdev-wheezy-live.list etc/apt/sources.list.d
+../../puppetlabs.list etc/apt/sources.list.d
+../../postgresql.list etc/apt/sources.list.d
+../../backports.list etc/apt/sources.list.d
+../../bbcarchdev-wheezy.pref etc/apt/preferences.d
 ../../bbcarchdev-sandbox-version etc
 ../../reithproxies usr/bin
 ../../socks_connect usr/sbin

@@ -1,5 +1,7 @@
 etc
 etc/profile.d
+etc/apt/sources.list.d
+etc/apt/preferences.d
 usr/bin
 usr/sbin
 
